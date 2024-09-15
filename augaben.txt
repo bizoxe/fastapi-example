@@ -1,0 +1,27 @@
+повторить typing Union, Optional
+rating: Optional[int] = None
+published: Union[bool, None] = True
+published: bool | None = True
+смотри
+def find_post_by_id(id):
+    print(id)
+    for index, element in enumerate(my_posts):
+        if element["id"] == id:
+            return index
+    return
+
+var = find_post_by_id(id)
+вернет либо индекс или None
+вот как правильно обрабатывать!
+if var is None:
+    ...
+else:
+     ...
+
+
+# указание времени текущего времени через datetime + timezone
+from datatime import datetime, timezone
+datetime.now(timezone.utc)
+
+
+посмотреть у сурена для чего нужно в Base определять  naming_convention: для корректной работы alembic
