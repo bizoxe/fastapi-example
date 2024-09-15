@@ -1,0 +1,7 @@
+можно закрыть доступ неавторизованным пользователям для, например, чтения, удаления, обновления постов
+реализовано в create post get post by id -> current_user: int = Depends(get_current_user)
+
+необходимо вынести в environments ALGORITHM SECRET KEY EXPIRE_MINUTES
+
+повторение
+alembic init alembic
